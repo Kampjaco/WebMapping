@@ -5,6 +5,7 @@
     <h2>JavaScript Functions</h2>
 
     <p id="multiply"></p>
+    <p id="squareRoot"></p>
     <p id="greet"></p>
     <p id="f2c"></p>
     <p id="method"></p>
@@ -27,10 +28,16 @@
         
         // create a function to return square root of a number ..
         
+        function squareRoot(num1) {
+            return Math.sqrt(num1)
+        }
+        
+        document.getElementById("squareRoot").innerHTML = "This is the result of a square root method: " + 
+        squareRoot(34);
 
         
         function greeting() {
-            return ("Hello!");
+            return ("What's crackalackin my slimes.  Boy I sure could go for a delicious Subway Sandwich right now");
         };
         
         document.getElementById("greet").innerHTML = "What do I say when I greet someone: "+ greeting();
