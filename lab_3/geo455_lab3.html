@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
-       <title>geo455_lab2</title>
+       <title>geo455_lab3</title>
         <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
-        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-
-        xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
-        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-
-        XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+        <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
         <style>
             body {
                 margin: 0;
@@ -17,15 +15,18 @@
                 color: #3d3d3d;
             }
             #title {
-                position: center;
+                position: fixed;
                 margin-top: 0;
-                top: 10px;
-                left: 50px;
+                top: 5px;
+                left: 10px;
                 font-size: 2em;
                 font-family: "Lora", serif;
                 letter-spacing: .04em;
                 padding: 10px 15px;
-                background-color: rgba(255, 255, 255, 0.5);
+                margin: 5px 25px;
+                width: 1460px;
+                
+                background-color: rgba(255, 255, 255, 0.8);
                 border: 1px solid grey;
                 border-radius: 3px;
                 z-index: 800;
@@ -41,12 +42,14 @@
                 width: 100%;
             }
             #description {
-                position:left;
-                bottom: 50px;
-                left: 10px;
-                width: 280px;
+                position:fixed;
+                top: 60px;
+                left: 15px;
+                width: 270px;
+                height: 600px;
                 padding: 0px 15px;
-                background-color: rgba(255, 255, 255, 0.7);
+                margin: 15px 15px;
+                background-color: rgba(255, 255, 255, 0.8);
                 border: 1px solid grey;
                 border-radius: 3px;
                 z-index: 800;
@@ -62,31 +65,51 @@
             #description a:hover {
                 text-decoration: underline;
             }
-            footer{ 
-                position: bottom;
-                margin-top: 0;
-                top: 10px;
+            <!footer{ 
+                position: fixed;
+                margin-top: 0px;
+                bottom: 15px;
                 left: 50px;
                 font-size: 2em;
                 font-family: "Lora", serif;
                 letter-spacing: .04em;
                 padding: 10px 15px;
-                background-color: rgba(255, 255, 255, 0.5);
+                margin-left: 295px;
+                margin-right: 15px;
+                width: 1150px;
+                background-color: rgba(255, 255, 255, 0.8);
                 border: 1px solid grey;
                 border-radius: 3px;
                 z-index: 800;
-            }
+            }>
         </style>
     </head>
-    <body>
-        <h1 id="title">Lab 2</h1>
+   <body>
+        <h1 id="title"><center>Lab 3: Journey to Switzerland</center></h1>
         <div id="map"></div>
         <div id="description">
-            <h2>About this assignment</h2>
-            <p>This is the final result of the <a href="https://leafletjs.com/examples/quick-start/" target="_blank">Leaflet Quick Start Guide</a>. The map demonstrates Leaflet basics, such as setting up a Leaflet map, adding markers, and popups.</p>
-            <p>The placement and styling of the title and description boxes is done using CSS. Check out the source code of this page to see how.</p>
-           <p>Map authored by Sophie Bouzek</p>
+            <h2>List of locations:</h2>
+            <ol type="1">
+                <li>Zurich</li>
+                <li>Lausanne</li>
+                <li>Geneva</li>
+                <li>Montreux</li>
+                <li>Chateau de Chillon</li>
+                <li>Vevey</li>
+                <li>Bern</li>
+                <li>Lucerne</li>
+                <li>Interlaken</li>
+                <li>Jungfrau</li>
+                <li>Zermatt</li>
+                <li>St. Moritz</li>
+            </ol>
+            <img src= "S:\kampf8699\geo455_sem2023\lab_3\images\matterhorn_zermatt_orig.jpg"   width="275" height="150">
+            <p>Photo credits: Gargi Chaudhuri</p>
+           <p>Map authored by Jacob Kampf</p>
         </div>
-        <script src="map.js"></script>
+        <script src="map_lab3.js"></script>
     </body>
+    <footer>
+        <center> Footer</center>
+    </footer>
 </html>
