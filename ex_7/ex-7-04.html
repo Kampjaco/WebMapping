@@ -41,7 +41,7 @@ var pnt_layer = L.layerGroup().addTo(mymap);
 var tin_layer = L.layerGroup().addTo(mymap);
 
 // Calculate random points
-var points = turf.randomPoint(20, {bbox: bounds});
+var points = turf.randomPoint(10, {bbox: bounds});
         
 L.geoJSON(points, {
     onEachFeature: function(feature, layer) {

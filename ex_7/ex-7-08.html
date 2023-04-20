@@ -35,6 +35,21 @@ L.tileLayer(
     "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", 
     {attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'}
 ).addTo(mymap);
+        
+var point1 = turf.point([-91.23060328354482, 43.81660129282059]);
+var point1buffer = turf.buffer(point1, 75, {units: 'miles'});  
+L.geoJSON(point1).addTo(mymap);
+L.geoJSON(point1buffer).addTo(mymap);
+        
+var point2 = turf.point([-91.48429454797873, 44.82312510110985]);
+var point2buffer = turf.buffer(point2, 75, {units: 'miles'});  
+L.geoJSON(point2buffer).addTo(mymap);
+        L.geoJSON(point2).addTo(mymap);
+        
+        
+var intersection = turf.intersect(uwlbuffer, uwecbuffer);
+L.geoJSON(intersection).addTo(mymap);
+
 
         
 
