@@ -1,0 +1,66 @@
+ <!DOCTYPE html>
+<html>
+    <head>
+       <title>Final Project</title>
+        <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+        <script src="https://cdn.jsdelivr.net/npm/leaflet.pattern"></script>
+        <script src="../leaflet-polygon.fillPattern-canvas.js"></script>
+        <script src="its_happening_real.js"></script>
+        <script src ="circles.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-easybutton@2/src/easy-button.css">
+        <script src="https://cdn.jsdelivr.net/npm/leaflet-easybutton@2/src/easy-button.js"></script>
+
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                background-color: "whitesmoke";
+                font-family: "Noto Sans", sans-serif;
+                color: #3d3d3d;
+            }
+            #title {
+                position: fixed;
+                margin-top: 0;
+                top: 10px;
+                left: 50px;
+                font-size: 1.5em;
+                font-family: "Lora", serif;
+                color: gainsboro;
+                letter-spacing: .04em;
+                padding: 10px 15px;
+                background-color: blue;
+                border: 1px solid grey;
+                border-radius: 3px;
+                z-index: 800;
+            }
+            #map {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                width: 100%;
+            }
+            .legend {
+              padding: 6px 8px;
+              line-height: 18px;
+              background: rgba(255,255,255,0.9);
+              box-shadow: 0 0 15px rgba(0,0,0,0.2);
+              border-radius: 5px;
+            }
+           .legend i {
+              width: 18px;
+              height: 18px;
+              float: left;
+              margin-right: 8px;
+              opacity: 0.7;
+            }
+        </style>
+    </head>
+    <body>
+        <div id='title'>NFL Infomap (updated as of April 2023)</div>
+        <div id="map"></div>
+            <script src="final.js"></script> 
+    </body>
+</html>
