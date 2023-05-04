@@ -56,10 +56,29 @@
               margin-right: 8px;
               opacity: 0.7;
             }
+            #description {
+                position: fixed;
+                bottom: 20px;
+                left: 10px;
+                width: 280px;
+                padding: 0px 15px;
+                background-color: rgba(255, 255, 255, 0.7);
+                border: 1px solid grey;
+                border-radius: 3px;
+                z-index: 800;
+            }
         </style>
     </head>
     <body>
         <div id='title'>NFL Infomap (updated as of April 2023)</div>
+        <div id="description">
+            <h2>About the map</h2>
+            <p>This map contains basic information about each NFL team.  The United States shapefile was provided by the US Census Bureau, and the information in the Win Percentage Layer was provided by a Reddit user.  There are two baselayers, a gray basemap and dark basemap.</p>
+            <p>The "Basic Information" layer contains  information about each team.  Any area that has a team is filled in with team's primary color.  Clicking on a filled in polygon opens a popup containing the team's name, logo, year founded, and a link to more information about the team.</p>
+            <p>The "Superbowl Wins" layer has the number of Superbowls each team has won.  Teams filled in with a darker polygon have more wins.  Clicking on a polygon creates a popup with the team name and number of Superbowl wins.</p>
+            <p>The "Win Percentage" layer shows the win percentage of each team.  The smaller a cirlce, the closer to 0 a team's win percentage is.  Hovering the mouse over a cirlce will create a popup that contains the team name, total number of wins, total number of loses, and total number of ties.  The win percentage is at the bottom of the popup.</p>
+           <p>Map authored by Jacob Kampf</p>
+        </div>
         <div id="map"></div>
             <script src="final.js"></script> 
     </body>
