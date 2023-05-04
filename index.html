@@ -4,13 +4,9 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>GEO 455 DEMO</title>
+        <title>ESC/GEO 455 (SP22) DEMO</title><!--change to your name -->
         <meta name="description" content="An interactive getting started guide">
-        <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+        <!-- change / playaround with different css elements to customize and build your own webpage-->
         <style>
             #container {
                 height: relative;
@@ -19,28 +15,19 @@
                 margin-right: auto;
                 margin-bottom: auto;
                 margin-left: auto;}
-            .h2color{
-                color: #810f7c;
-                font-size: 1.5em;
-                font-family: 'Open Sans', sans-serif;
-            }
-            .h3color{
-                color:  #e0ecf4;
-                font-size: 1em;
-                font-family: "Lora", serif;
-            }
+
             #container #header {
                 font-size: 1.5em;
                 font-family: "Lora", serif;
                 letter-spacing: .04em;
                 padding: 5px 5px;
-                background-color: #9ebcda;
+                background-color: rgba(99, 200, 228, 0.1);
                 border: 1px solid grey;
-                border-radius: 5px;
+                border-radius: 19px;
                 text-align: center;
                 }
             #container #main {
-                margin-left: 270px;
+                margin-left: 250px;
                 margin-right: 250px;
                 margin-top: 5px;
                 height: 750px;
@@ -48,15 +35,15 @@
                 font-size: 1em;
                 font-family: "Lora", serif;
                 letter-spacing: .04em;
-                padding: 20px 50px;
-                background-color: #e0ecf4;
+                padding: 10px 50px;
+                background-color: rgba(255, 255, 255);
                 border: 1px solid grey;
-                border-radius:3px;
+                border-radius:15px;
                 }
 
-             #container #leftsidebarmain {
+            #container #leftsidebar {
                 position: static;
-                width: 220px;
+                width: 200px;
                 top: 10px;
                 left: 50px;
                 padding: 10px 15px;
@@ -66,51 +53,9 @@
                 font-size: 1em;
                 font-family: "Lora", serif;
                 letter-spacing: .04em;
-                background-color: #9ebcda;
+                background-color: mediumpurple;
                 border: 1px solid grey;
-                border-radius: 3px;
-            }
-            #container #leftsidebar1 {
-                position: static;
-                width: 200px;
-                padding: 5px;
-                float: left;
-                height: 320px;
-                margin: 5px;
-                font-size: 1em;
-                font-family: "Lora", serif;
-                letter-spacing: .04em;
-                background-color: #8856a7;
-                border: 1px solid grey;
-                border-radius: 3px;
-            }
-            #container #leftsidebar2 {
-                position: static;
-                width: 200px;
-                padding: 5px;
-                float: left;
-                height: 240px;
-                margin: 5px;
-                font-size: 1em;
-                font-family: "Lora", serif;
-                letter-spacing: .04em;
-                background-color: #8856a7;
-                border: 1px solid grey;
-                border-radius: 3px;
-            }
-            #container #leftsidebar3 {
-                position: static;
-                width: 200px;
-                padding: 5px;
-                float: left;
-                height: 100px;
-                margin: 5px;
-                font-size: 1em;
-                font-family: "Lora", serif;
-                letter-spacing: .04em;
-                background-color: #8856a7;
-                border: 1px solid grey;
-                border-radius: 3px;
+                border-radius: 15px;
             }
             #container #rightsidebar {
                 position: static;
@@ -124,152 +69,91 @@
                 font-family: "Lora", serif;
                 letter-spacing: .04em;
                 padding: 10px 15px;
-                background-color: #9ebcda;
+                background-color: rgba(99, 200, 228, 0.5);
                 border: 1px solid grey;
-                border-radius: 3px;
+                border-radius: 15px;
             }
 
             #container #menulist {
                 margin: 1px;
                 padding: 1px;
-                font-size: 0.9em;
             }
 
             #container .menuitem {
-                background: #e0ecf4;
+                background: #ffffff;
                 border-radius: 4px;
-                font-size: 0.8em;
+                font-size: 1em;
                 font-family: "Lora", serif;
                 letter-spacing: .04em;
                 list-style-type: none;
                 margin: 4px;
                 padding: 2px;
             }
-            table {
-              font-family: "Lora", serif;
-              border-collapse: collapse;
-              height: 400px;
-              width: 100%;
-              padding: 4px
-            }
-
-            td, th {
-              border: collapse;
-              text-align: left;
-              vertical-align: top;
-              padding:4px;
-            }
         </style>
     </head>
     <body>
         <div id="container">
-            <div id = "header"><h2 class="h2color">GEO 455: WEBMAPPING</h2>
-              <p class="h2color", style="font-size: 1em">Dept. of Geography and Earth Science, University of Wisconsin - La Crosse</p>
+            <div id = "header"><h3>GEO 455: Webmapping (Spring 2023)</h3>
+              <p><em>Dept. of Geography and Earth Science, University of Wisconsin - La Crosse</em></p>
                 
             </div>
-            <div id="leftsidebarmain">
-                <div id= "leftsidebar1">
-                    <h4 class="h3color">Lab Assignments</h4>
-                        <ul id="menulist">
-                          <li class="menuitem"><a href="lab_1/geo455_lab1.html">Lab 1</a></li>
-                          <li class="menuitem"><a href="lab_2/geo455_lab2.html">Lab 2</a></li>
-                          <li class="menuitem"><a href="lab_3/geo455_lab3.html">Lab 3</a></li>
-                          <li class="menuitem"><a href="lab_4/geo455_lab4.html">Lab 4</a></li>
-                          <li class="menuitem"><a href="lab_5/geo455_lab5.html">Lab 5</a></li>
-                          <li class="menuitem"><a href="lab_6/geo455_lab6.html">Lab 6</a></li>
-                          <li class="menuitem"><a href="lab_7/geo455_lab7.html">Lab 7</a></li>
-                          <li class="menuitem"><a href="lab_8/geo455_lab8.html">Lab 8</a></li>
-                          <li class="menuitem"><a href="lab_9/geo455_lab9.html">Lab 9</a></li>
-                          <li class="menuitem"><a href="lab_10/geo455_lab10.html">Lab 10</a></li>
-                        </ul>
-                </div>
-                <div id= "leftsidebar2">
-                    <h4 class="h3color">Exercises</h4>
-                     <ul  id="menulist">
-                        <li class="menuitem"><a href="ex_1/geo455_ex1.html">Ex 1</a></li>
-                        <li class="menuitem"><a href="ex_2/geo455_ex2.html">Ex 2</a></li>
-                        <li class="menuitem"><a href="ex_3/geo455_ex3.html">Ex 3</a></li>
-                        <li class="menuitem"><a href="ex_4/geo455_ex4.html">Ex 4</a></li>
-                        <li class="menuitem"><a href="ex_5/geo455_ex5.html">Ex 5</a></li>
-                        <li class="menuitem"><a href="ex_6/geo455_ex6.html">Ex 6</a></li>
-                        <li class="menuitem"><a href="ex_7/geo455_ex7.html">Ex 7</a></li>
-                    </ul>
-                </div>
-                <div id= "leftsidebar3">
-                    <h4 class="h3color">Final Project</h4>
-                     <ul  id="menulist">
-                        <li class="menuitem"><a href="final_prj_ex.html">Final Project</a></li>
-                    </ul>
-                </div>
+            
+            <div id= "leftsidebar">
+                <h3>Lab Assignments</h3>
+                <ul id="menulist">
+                  <li class="menuitem"><a href="../lab_1/geo455_lab1.html">Lab 1</a></li>
+                  <li class="menuitem"><a href="../lab_2/geo455_lab2.html">Lab 2</a></li>
+                  <li class="menuitem"><a href="lab_3/geo455_lab3.html">Lab 3</a></li>
+                  <li class="menuitem"><a href="lab_4/geo455_lab4.html">Lab 4</a></li>
+                  <li class="menuitem"><a href="lab_5/geo455_lab5.html">Lab 5</a></li>
+                  <li class="menuitem"><a href="lab_6/geo455_lab6.html">Lab 6</a></li>
+                  <li class="menuitem"><a href="lab_7/geo455_lab7.html">Lab 7</a></li>
+                  <li class="menuitem"><a href="lab_8/geo455_lab8.html">Lab 8</a></li>
+                  <li class="menuitem"><a href="lab_9/geo455_lab9.html">Lab 9</a></li>
+                </ul>
+                <h3>Exercises</h3>
+                 <ul  id="menulist">
+                    <li class="menuitem"><a href="../ex_1/geo455_ex1.html">Ex 1</a></li>
+                    <li class="menuitem"><a href="../ex_2/geo455_ex2.html">Ex 2</a></li>
+                    <li class="menuitem"><a href="ex_3/geo455_ex3.html">Ex 3</a></li>
+                    <li class="menuitem"><a href="ex_4/geo455_ex4.html">Ex 4</a></li>
+                    <li class="menuitem"><a href="ex_5/geo455_ex5.html">Ex 5</a></li>
+                    <li class="menuitem"><a href="ex_6/geo455_ex6.html">Ex 6</a></li>
+                </ul>
+                <h3>Final Project</h3>
+                 <ul  id="menulist">
+                    <li class="menuitem"><a href="ex_1/final_project.html">Final Project</a></li>
+                </ul>
             </div>
             <div id="rightsidebar">
                 <p> </p>
-                <img src="AvatarMaker.png" align= "center" width="200" height="200">
                 <p></p>
-                <h3 class="h2color", style="font-size: 1em"> Instructor:</h3>
-                <h4 class="h2color", style="font-size: 1em"><a href="https://gargic.weebly.com/" target="_blank">Gargi Chaudhuri, PhD</a></h4>
-                <p>Professor, <br> 
-                    <a href="https://www.uwlax.edu/geography-and-earth-science/" target="_blank">Geography @ UWL</a> <br>
-                </p>          
-
-               <a href="mailto:gchaudhuri@uwlax.edu">gchaudhuri@uwlax.edu</a>
+                <h3> Contact:</h3>
+                <h4><em>Jacob Kampf</em></h4>
+               <a href="mailto:kampf8699@uwlax.edu">kampf8699@uwlax.edu</a>
 
             </div>
             <div id="main"> 
-                <!--<h3>Introduction</h3> <!-- Delete this header when you adapt the page -->   
+                <h2>This is a demo guide!</h2> <!-- Delete this header when you adapt the page -->   
                     <p>
-                        Welcome to GEO 455/555-Wemapping course. The webpage layout is designed to provide an example of a student's final webpage. Students are expected <a href="index_v1.html" target="_blank"> start with a simple webpage with a simple minimalist design</a> and progressively improve it throughout the semester to showcase the skills developed during the course. Detailed information about the course is provided in the <a href="https://github.com/gchaudhuri/geo455_page/blob/main/455_syllabus.pdf" target="_blank">syllabus here</a>.<br> </p>
+                        Welcome to Wemapping course. This is a very minimalist and simple webpage that you will get started with for your labs. I expect as the semester progresses you will update and refine this page to show your skills. 
 
-                       
-                <table>
-                    <tr>
-                        <th><h4>Reading Materials</h4></th>
-                        <th><h4>Assignment Description</h4></th>
-                      </tr>
-                    <tr>
-                        <td width="50%"> <ul>
-                                <li> Muehlenhaus, Ian (2013), Web Cartography: Map Design for Interactive and Mobile Devices 1st Edition, ISBN 9781439876220, CRC Press</li>
-                                        <ul>
-                                          <li class="menuitem">Ch 3 - Map elements</li>
-                                          <li class="menuitem">Ch 4 - Map Composition and Layout</li>
-                                          <li class="menuitem">Ch 9 - Thematic Visualization</li>
-                                          <li class="menuitem">Ch 10 - Animation</li>
-                                          <li class="menuitem">Ch 12 - Web Map Production</li>
-                                        </ul>
-                                <li><a href="https://geobgu.xyz/web-mapping2/index.html" target="_blank">"Introduction to Webmapping" by Michael Dorman (Web book)</a></li>
-                                        <ul>
-                                            <li class="menuitem"><a href="https://geobgu.xyz/web-mapping2/html.html" target="_blank">Ch 1 - HTML </a></li>
-                                            <li class="menuitem"><a href="https://geobgu.xyz/web-mapping2/css.html" target="_blank">Ch 2 - CSS </a></li>
-                                            <li class="menuitem"><a href="https://geobgu.xyz/web-mapping2/javascript-basics.html" target="_blank">Ch 3 - JavaScript Basics</a></li>
-                                            <li class="menuitem"><a href="https://geobgu.xyz/web-mapping2/javascript-interactivity.html" target="_blank">Ch 4 - JavaScript interactivity</a></li>
-                                            <li class="menuitem"><a href="https://geobgu.xyz/web-mapping2/web-servers-1.html" target="_blank">Ch 5 - Webservers </a></li>
-                                            <li class="menuitem"><a href="https://geobgu.xyz/web-mapping2/leaflet.html" target="_blank">Ch 6 - Leaflet </a></li>
-                                            <li class="menuitem"><a href="https://geobgu.xyz/web-mapping2/geojson-1.html" target="_blank">Ch 7 - GeoJSON </a></li>
-                                            <li class="menuitem"><a href="https://geobgu.xyz/web-mapping2/client-side-geoprocessing.html" target="_blank">Ch 12 - Client-side Processing </a></li>
-                                        </ul>
-                            </ul>
-                        </td>
-                        <td width="50%"><ul>
-                            <li class="menuitem"><a href="lab_1/geo455_lab1.html" target="_blank">Lab 1: Introduction to HTML</a>. The goal of this lab is to learn how to author and style an HTML document, create hyperlinks, email link, and add images. This lab is adapted from Ian Muehlenhaus at UWL. </li>
-                            <li class="menuitem"><a href="lab_2/geo455_lab2.html" target="_blank">Lab 2: Introduction to CSS</a>. The goal of this lab is to learn how to create styled webpage layout which can be used to show different containers and embed webmap.  This lab is adapted from Ian Muehlenhaus at UWL. </li>
-                            <li class="menuitem"><a href="lab_3/geo455_lab3.html" target="_blank">Lab 3: Webmap with point markers</a>. The goal of this lab is to learn how to create a map with list of point locations and create customize pop-up.</li>
-                            <li class="menuitem"><a href="lab_4/geo455_lab4.html" target="_blank">Lab 4: Layer grouping and WMS</a>. The goal of this lab is to learn how to group layers using Leaflet JS package to create customized menu, use multiple basemap, use custom popups with images, fetch data from a Web Map Service (WMS). </li>
-                            <li class="menuitem"><a href="lab_5/geo455_lab5.html" target="_blank">Lab 5: Adding JavaScript interactivity</a>. The goal of this lab is to learn how to add real time data via open API, add JS interactivity such as navigation buttons plugins, clickable basemaps, and add custom plugins and widgets. </li>
-                            <li class="menuitem"><a href="lab_6/geo455_lab6.html" target="_blank">Lab 6: Choropleth mapping with GeoJSON</a>. The goal of this lab is to learn how to work with existing geojson data structure, create choropleth map, convert shapefile to json file. This lab is adapted from Ting Liu at North Eastern Illinois University. </li>
-                            <li class="menuitem"><a href="lab_7/geo455_lab7.html" target="_blank">Lab 7: Thematic Mapping</a>. The goal of this lab is to learn how to create different thematic maps, such as proportional circles, heatmap, and cluster map using Leaflet JS package. This lab is based on <a href="https://gchaudhuri.github.io/testwebpage/" target="_blank">undergraduate research conducted by Sydney Graff (2020)</a> under the supervision of Prof. Chaudhuri. </li>
-                            <li class="menuitem"><a href="lab_8/geo455_lab8.html" target="_blank">Lab 8: jQuery and ESRI Leaflet</a>. The goal of this lab is to learn how to add interactivity using jQuery on a webpage, and use ESRI Leaflet package to fetch custom data from ArcGIS online</li>
-                            <li class="menuitem"><a href="lab_9/geo455_lab9.html" target="_blank">Lab 9: Flowmap</a>. The goal of this lab is to learn how to use Leaflet JS plugin to create a flow map using American Community Survey Commuting Flows data. </li>
-                            <li class="menuitem"><a href="lab_10/geo455_lab10.html" target="_blank">Lab 10: Introduction to Turf.JS</a>. The goal of this lab is to learn how to work add basic geoprocessing in a webmap using TurfJS. </li>
-                            </ul>
-                        </td>
-                    </tr>
-                 
-               
-                <br>
-                
-                </table>
+                    </p>
+     
+                    <h3>About me</h3>
+                    <p>
+                        I am majoring in geography with a GIS emphasis, and minoring in business administration and computer science.  I'm planning on attending graduate school for a topic relating to geography.  When I'm not in school, I like to watch football, drive around, or cook food. 
+                        
+                    </p>
            </div>
 
         </div>
     </body>
 </html>
+                
+                
+ 
+        
+
+
+       
